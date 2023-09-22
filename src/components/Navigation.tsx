@@ -1,18 +1,29 @@
-import { Typography, Box, Stack, List, ListItem } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const navData = [
-  { topic: "About", href: "#about" },
-  { topic: "Experience", href: "#experience" },
-  { topic: "Projects", href: "#projects" },
+  { topic: "About", href: "about" },
+  { topic: "Experience", href: "experience" },
+  { topic: "Projects", href: "projects" },
 ];
 
 export const Navigation = () => {
   const [selectedItem, setSelectedItem] = useState(0);
 
-  const handleItemClick = (index: number) => {
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    index: number
+  ) => {
+    e.preventDefault();
     setSelectedItem(index);
+
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -27,8 +38,8 @@ export const Navigation = () => {
       {navData.map((item, index) => (
         <Link
           key={index}
-          href={item.href}
-          onClick={() => handleItemClick(index)}
+          href={`#${item.href}`}
+          onClick={(e) => handleScroll(e, index)}
         >
           <Typography
             variant="subtitle1"

@@ -4,12 +4,12 @@ import { Intro } from "@/components/Intro";
 import { Projects } from "@/components/Projects";
 import { Section } from "@/components/Section";
 import { Social } from "@/components/Social";
-import { Box, Grid, Stack } from "@mui/material";
+import { Grid, Stack } from "@mui/material";
 
 const Home = () => {
   return (
     <Section>
-      <Stack sx={{ padding: "96px", height: "100vh" }}>
+      <Stack sx={{ paddingX: "96px", height: "100vh" }}>
         <Grid container>
           <Grid item md={6}>
             <Stack
@@ -26,7 +26,7 @@ const Home = () => {
             </Stack>
           </Grid>
           <Grid item md={6}>
-            <Stack>
+            <Stack sx={{ paddingX: "24px" }}>
               <About />
               <Experience />
               <Projects />
