@@ -15,6 +15,7 @@ export const Card = ({ date, role, description, skills }: Props) => {
       sx={{
         borderRadius: "8px",
         padding: "24px",
+        paddingTop: "0px",
       }}
     >
       <Box width="30%">

@@ -1,5 +1,8 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { Card } from "./Card";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Link from "next/link";
 
 const data = [
   {
@@ -23,12 +26,30 @@ const data = [
 export const Experience = () => {
   return (
     <section id="experience">
-      <Stack height="100vh" sx={{ paddingTop: 24 }}>
+      <Stack sx={{ paddingTop: 24 }}>
         {data.map((item, index) => (
           <Box key={index} sx={{ margin: "16px" }}>
             <Card {...item} />
           </Box>
         ))}
+
+        <Link target="_blank" href="/resume.pdf">
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              "&:hover": {
+                textDecoration: "underline",
+                display: "flex",
+                width: "100px",
+                justifyContent: "space-between",
+              },
+            }}
+          >
+            <Typography>Resume</Typography>
+            <ArrowForwardIcon />
+          </Box>
+        </Link>
       </Stack>
     </section>
   );
