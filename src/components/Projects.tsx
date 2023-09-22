@@ -1,11 +1,39 @@
-import { Stack } from "@mui/material";
-import React from "react";
+import { Box, Stack } from "@mui/material";
+import { ProjectCard } from "./ProjectCard";
+
+const projectData = [
+  {
+    title: "Mongol API",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.",
+    tech: ["TypeScript", "React", "Next.js", "Node.js"],
+    href: "",
+  },
+  {
+    title: "Mongol API",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.",
+    tech: ["TypeScript", "React", "Next.js", "Node.js"],
+    href: "",
+  },
+  {
+    title: "Mongol API",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.",
+    tech: ["TypeScript", "React", "Next.js", "Node.js"],
+    href: "",
+  },
+];
 
 export const Projects = () => {
   return (
     <section id="projects">
-      <Stack height="100vh" sx={{ paddingTop: 24 }}>
-        Projects
+      <Stack sx={{ paddingY: 24 }}>
+        {projectData.map((item, index) => (
+          <Box key={index} sx={{ margin: "16px" }}>
+            <ProjectCard {...item} />
+          </Box>
+        ))}
       </Stack>
     </section>
   );

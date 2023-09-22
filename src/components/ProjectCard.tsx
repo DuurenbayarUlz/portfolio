@@ -1,14 +1,14 @@
 import { Box, Chip, Stack, Typography } from "@mui/material";
-import React from "react";
+import Image from "next/image";
 
 interface Props {
-  date: string;
-  role: string;
+  title: string;
   description: string;
-  skills: string[];
+  tech: string[];
+  href: string;
 }
 
-export const Card = ({ date, role, description, skills }: Props) => {
+export const ProjectCard = ({ title, description, tech, href }: Props) => {
   return (
     <Stack
       direction="row"
@@ -17,11 +17,18 @@ export const Card = ({ date, role, description, skills }: Props) => {
         paddingTop: "0px",
       }}
     >
-      <Box width="30%">
-        <Typography variant="body2">{date}</Typography>
+      <Box
+        width="30%"
+        height={80}
+        sx={{
+          borderRadius: "10px",
+          border: "1px solid #D3D3D3",
+        }}
+      >
+        <Image src="" alt="" />
       </Box>
-      <Stack width="70%">
-        <Typography variant="body1">{role}</Typography>
+      <Stack width="70%" sx={{ marginLeft: "20px" }}>
+        <Typography variant="body1">{title}</Typography>
         <Typography variant="body2" sx={{ paddingTop: 4 }}>
           {description}
         </Typography>
@@ -32,7 +39,7 @@ export const Card = ({ date, role, description, skills }: Props) => {
             paddingTop: 4,
           }}
         >
-          {skills.map((skill, index) => (
+          {tech.map((skill, index) => (
             <Chip
               key={index}
               label={skill}
