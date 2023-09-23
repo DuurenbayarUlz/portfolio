@@ -8,7 +8,7 @@ interface Props {
   skills: string[];
 }
 
-export const Card = ({ date, role, description, skills }: Props) => {
+export const ExperienceCard = ({ date, role, description, skills }: Props) => {
   return (
     <Stack
       direction="row"

@@ -1,8 +1,7 @@
-import { Box, Stack, Typography } from "@mui/material";
-import { Card } from "./Card";
-import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box, Stack, Typography } from "@mui/material";
 import Link from "next/link";
+import { ExperienceCard } from "./ExperienceCard";
 
 const data = [
   {
@@ -29,7 +28,7 @@ export const Experience = () => {
       <Stack sx={{ paddingTop: 24 }}>
         {data.map((item, index) => (
           <Box key={index} sx={{ margin: "16px" }}>
-            <Card {...item} />
+            <ExperienceCard {...item} />
           </Box>
         ))}
 

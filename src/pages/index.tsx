@@ -4,9 +4,37 @@ import { Intro } from "@/components/Intro";
 import { Projects } from "@/components/Projects";
 import { Section } from "@/components/Section";
 import { Social } from "@/components/Social";
-import { Grid, Stack } from "@mui/material";
+import { useWindowSize } from "@/hooks/useWindowSize";
+import { Box, Grid, Stack } from "@mui/material";
 
 const Home = () => {
+  const { width } = useWindowSize();
+  const isMobile = width ? width < 900 : false;
+
+  if (isMobile) {
+    return (
+      <Section>
+        <Stack sx={{ paddingX: "24px", height: "100vh" }}>
+          <Box sx={{ paddingTop: "24px" }}>
+            <Intro />
+          </Box>
+          <Box sx={{ paddingTop: "24px" }}>
+            <About />
+          </Box>
+          <Box sx={{ paddingTop: "24px" }}>
+            <Experience />
+          </Box>
+          <Box sx={{ paddingTop: "24px" }}>
+            <Projects />
+          </Box>
+          <Box sx={{ paddingTop: "24px" }}>
+            <Social />
+          </Box>
+        </Stack>
+      </Section>
+    );
+  }
+
   return (
     <Section>
       <Stack sx={{ paddingX: "96px", height: "100vh" }}>

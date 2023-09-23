@@ -21,28 +21,6 @@ declare module "@mui/material/styles" {
 
 const theme = createTheme({
   spacing: 4,
-  palette: {
-    primary: {
-      100: "#F0F6FF",
-      200: "#83BDFF",
-      300: "#1E70EB",
-      400: "#0043A8",
-      500: "#0B253C",
-    },
-    secondary: {
-      100: "#F7F9FC",
-      200: "#D0D7E2",
-      300: "#7B8698",
-      400: "#374253",
-      500: "#0F1825",
-      main: "#0F1825",
-    },
-
-    common: {
-      black: "#000",
-      white: "#fff",
-    },
-  },
   breakpoints: {
     values: {
       xs: 0,
