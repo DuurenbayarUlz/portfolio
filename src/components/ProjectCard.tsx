@@ -1,5 +1,4 @@
 import { Box, Chip, Stack, Typography } from "@mui/material";
-import Image from "next/image";
 
 interface Props {
   title: string;
@@ -24,9 +23,8 @@ export const ProjectCard = ({ title, description, tech, href }: Props) => {
           borderRadius: "10px",
           border: "1px solid #D3D3D3",
         }}
-      >
-        <Image src="" alt="" />
-      </Box>
+      />
+
       <Stack width="70%" sx={{ marginLeft: "20px" }}>
         <Typography variant="body1">{title}</Typography>
         <Typography variant="body2" sx={{ paddingTop: 4 }}>

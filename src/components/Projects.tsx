@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { ProjectCard } from "./ProjectCard";
 
 const projectData = [
@@ -34,6 +34,10 @@ export const Projects = () => {
             <ProjectCard {...item} />
           </Box>
         ))}
+
+        <Typography variant="body1" sx={{ color: "grey" }}>
+          Powered by NextJS and Material UI, deployed on Vercel
+        </Typography>
       </Stack>
     </section>
   );

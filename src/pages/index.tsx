@@ -5,7 +5,7 @@ import { Projects } from "@/components/Projects";
 import { Section } from "@/components/Section";
 import { Social } from "@/components/Social";
 import { useWindowSize } from "@/hooks/useWindowSize";
-import { Box, Grid, Stack } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 
 const Home = () => {
   const { width } = useWindowSize();

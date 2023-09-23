@@ -6,7 +6,7 @@ export const Social = () => {
   return (
     <Stack
       direction="row"
-      sx={{ marginY: "32px" }}
+      sx={{ marginTop: "32px" }}
       justifyContent="space-around"
       alignItems="center"
       maxWidth={140}
