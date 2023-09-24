@@ -22,9 +22,9 @@ const Home = () => {
     return (
       <Section>
         <Stack sx={{ paddingX: "24px" }}>
-          <Intro isMobile={isMobile} />
-          <About isMobile={isMobile} />
-          <Experience />
+          <Intro isMobile />
+          <About isMobile />
+          <Experience isMobile />
           <Projects />
           <Social />
         </Stack>
