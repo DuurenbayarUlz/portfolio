@@ -3,11 +3,11 @@ import { Instagram, LinkedIn, GitHub } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 import Link from "next/link";
 
-export const Social = () => {
+export const Social = ({ isMobile }: { isMobile?: boolean }) => {
   return (
     <Stack
       direction="row"
-      sx={{ marginTop: "32px" }}
+      sx={{ marginY: isMobile ? "16px" : "32px" }}
       justifyContent="space-around"
       alignItems="center"
       maxWidth={140}

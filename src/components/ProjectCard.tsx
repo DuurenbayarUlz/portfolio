@@ -12,7 +12,7 @@ interface Props {
 export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
   if (isMobile) {
     return (
-      <Stack direction="row">
+      <Stack direction="row" justifyContent="center">
         <Box
           width="40%"
           position="relative"

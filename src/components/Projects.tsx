@@ -26,7 +26,6 @@ const projectData = [
 ];
 
 export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
-
   if (isMobile) {
     return (
       <Stack sx={{ paddingTop: 8 }}>
@@ -36,7 +35,7 @@ export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
           </Box>
         ))}
 
-        <Typography variant="body1" sx={{ color: "grey" }}>
+        <Typography variant="body2" sx={{ color: "grey", paddingTop: "32px" }}>
           Powered by NextJS and Material UI, deployed on Vercel
         </Typography>
       </Stack>

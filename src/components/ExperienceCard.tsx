@@ -18,11 +18,11 @@ export const ExperienceCard = ({
 }: Props) => {
   if (isMobile) {
     return (
-      <Stack direction="row">
-        <Box width="30%">
+      <Stack direction="row" justifyContent="center">
+        <Box width="40%" sx={{ maxWidth: "120px" }}>
           <Typography variant="body2">{date}</Typography>
         </Box>
-        <Stack width="70%">
+        <Stack width="60%" sx={{ marginLeft: "20px" }}>
           <Typography variant="body2">{role}</Typography>
           <Typography variant="body2" sx={{ paddingTop: 4 }}>
             {description}
