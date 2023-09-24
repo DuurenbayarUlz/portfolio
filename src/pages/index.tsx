@@ -44,7 +44,7 @@ const Home = () => {
 
   return (
     <Section>
-      <Stack sx={{ paddingX: "96px", height: "100vh", backgroundColor: "red" }}>
+      <Stack sx={{ paddingX: "96px", height: "100vh" }}>
         <Grid container>
           <Grid item md={6}>
             <Stack
