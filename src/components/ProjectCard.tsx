@@ -1,4 +1,5 @@
 import { Box, Chip, Stack, Typography } from "@mui/material";
+import Image from "next/image";
 
 interface Props {
   title: string;
@@ -18,12 +19,21 @@ export const ProjectCard = ({ title, description, tech, href }: Props) => {
     >
       <Box
         width="30%"
+        position="relative"
         height={80}
         sx={{
           borderRadius: "10px",
           border: "1px solid #D3D3D3",
+          overflow: "hidden",
         }}
-      />
+      >
+        <Image
+          fill
+          src={"/projects/mongol-api.png"}
+          alt="mongol-api"
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
 
       <Stack width="70%" sx={{ marginLeft: "20px" }}>
         <Typography variant="body1">{title}</Typography>
