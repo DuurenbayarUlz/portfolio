@@ -25,7 +25,24 @@ const projectData = [
   },
 ];
 
-export const Projects = () => {
+export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
+
+  if (isMobile) {
+    return (
+      <Stack sx={{ paddingTop: 8 }}>
+        {projectData.map((item, index) => (
+          <Box key={index} sx={{ margin: "8px" }}>
+            <ProjectCard {...item} isMobile />
+          </Box>
+        ))}
+
+        <Typography variant="body1" sx={{ color: "grey" }}>
+          Powered by NextJS and Material UI, deployed on Vercel
+        </Typography>
+      </Stack>
+    );
+  }
+
   return (
     <section id="projects">
       <Stack sx={{ paddingY: 24 }}>

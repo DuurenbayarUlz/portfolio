@@ -25,7 +25,7 @@ const Home = () => {
           <Intro isMobile />
           <About isMobile />
           <Experience isMobile />
-          <Projects />
+          <Projects isMobile />
           <Social />
         </Stack>
       </Section>
