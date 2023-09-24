@@ -8,7 +8,7 @@ interface Props {
   href: string;
 }
 
-export const ProjectCard = ({ title, description, tech, href }: Props) => {
+export const ProjectCard = ({ title, description, tech }: Props) => {
   return (
     <Stack
       direction="row"
@@ -18,12 +18,13 @@ export const ProjectCard = ({ title, description, tech, href }: Props) => {
       }}
     >
       <Box
-        width="30%"
+        width="40%"
         position="relative"
         height={80}
         sx={{
           borderRadius: "10px",
           border: "1px solid #D3D3D3",
+          maxWidth: 120,
           overflow: "hidden",
         }}
       >
@@ -32,10 +33,11 @@ export const ProjectCard = ({ title, description, tech, href }: Props) => {
           src={"/projects/mongol-api.png"}
           alt="mongol-api"
           style={{ objectFit: "cover" }}
+          sizes="100%"
         />
       </Box>
 
-      <Stack width="70%" sx={{ marginLeft: "20px" }}>
+      <Stack width="60%" sx={{ marginLeft: "20px" }}>
         <Typography variant="body1">{title}</Typography>
         <Typography variant="body2" sx={{ paddingTop: 4 }}>
           {description}

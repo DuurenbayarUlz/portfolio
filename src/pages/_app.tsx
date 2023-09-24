@@ -5,16 +5,14 @@ import Theme from "@/theme/theme";
 
 const CustomApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <>
-      <Theme>
-        <Head>
-          <title>Duurenbayar Portfolio</title>
-        </Head>
-        <main className="app">
-          <Component {...pageProps} />
-        </main>
-      </Theme>
-    </>
+    <Theme>
+      <Head>
+        <title>Duurenbayar Portfolio</title>
+      </Head>
+      <main className="app">
+        <Component {...pageProps} />
+      </main>
+    </Theme>
   );
 };
 

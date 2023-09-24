@@ -1,11 +1,10 @@
-import { useWindowSize } from "@/hooks/useWindowSize";
 import { Stack, Typography } from "@mui/material";
 import Link from "next/link";
 import { Navigation } from "./Navigation";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 export const Intro = () => {
-  const { width } = useWindowSize();
-  const isMobile = width ? width < 900 : false;
+  const isMobile = useMediaQuery();
 
   return (
     <>
