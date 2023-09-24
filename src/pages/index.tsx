@@ -21,22 +21,12 @@ const Home = () => {
   if (isMobile) {
     return (
       <Section>
-        <Stack sx={{ paddingX: "24px", height: "100vh" }}>
-          <Box sx={{ paddingTop: "24px" }}>
-            <Intro />
-          </Box>
-          <Box sx={{ paddingTop: "24px" }}>
-            <About />
-          </Box>
-          <Box sx={{ paddingTop: "24px" }}>
-            <Experience />
-          </Box>
-          <Box sx={{ paddingTop: "24px" }}>
-            <Projects />
-          </Box>
-          <Box sx={{ paddingTop: "24px" }}>
-            <Social />
-          </Box>
+        <Stack sx={{ paddingX: "24px" }}>
+          <Intro isMobile={isMobile} />
+          <About isMobile={isMobile} />
+          <Experience />
+          <Projects />
+          <Social />
         </Stack>
       </Section>
     );
