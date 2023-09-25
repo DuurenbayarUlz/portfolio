@@ -6,20 +6,20 @@ export const About = ({ isMobile }: { isMobile?: boolean }) => {
     return (
       <Stack sx={{ paddingTop: 8 }}>
         <Box sx={{ paddingY: "16px" }}>
-          <Typography variant="h6">ABOUT</Typography>
+          <Typography variant="subtitle1">ABOUT</Typography>
         </Box>
 
-        <Typography variant="body2">
+        <Typography variant="body1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
           tempor orci dapibus ultrices in iaculis nunc sed augue.
         </Typography>
-        <Typography variant="body2" sx={{ paddingTop: 4 }}>
+        <Typography variant="body1" sx={{ paddingTop: 4 }}>
           ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci
           dapibus ultrices in iaculis nunc sed augue.
         </Typography>
-        <Typography variant="body2" sx={{ paddingTop: 4 }}>
+        <Typography variant="body1" sx={{ paddingTop: 4 }}>
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
           tempor orci dapibus ultrices in iaculis nunc sed augue.
         </Typography>

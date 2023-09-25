@@ -7,9 +7,9 @@ export const Intro = ({ isMobile }: { isMobile?: boolean }) => {
     return (
       <Stack sx={{ paddingTop: 8 }}>
         <Link href="/">
-          <Typography variant="subtitle1">Duurenbayar Ulziiduuren</Typography>
+          <Typography variant="h1">Duurenbayar Ulziiduuren</Typography>
         </Link>
-        <Typography variant="body1" sx={{ paddingTop: "8px" }}>
+        <Typography variant="h2" sx={{ paddingTop: "8px" }}>
           Software Engineer at Pinecone
         </Typography>
         <Typography variant="body2" sx={{ paddingTop: "8px", color: "grey" }}>
@@ -23,12 +23,15 @@ export const Intro = ({ isMobile }: { isMobile?: boolean }) => {
   return (
     <Stack maxWidth={528}>
       <Link href="/">
-        <Typography variant="h3">Duurenbayar Ulziiduuren</Typography>
+        <Typography variant="h1">Duurenbayar Ulziiduuren</Typography>
       </Link>
-      <Typography variant="subtitle1" sx={{ paddingTop: "12px" }}>
+      <Typography variant="h2" sx={{ paddingTop: "12px" }}>
         Software Engineer at Pinecone
       </Typography>
-      <Typography sx={{ paddingTop: "12px", maxWidth: "400px", color: "grey" }}>
+      <Typography
+        variant="body1"
+        sx={{ paddingTop: "12px", maxWidth: "400px", color: "grey" }}
+      >
         I am a software engineer with a passion for building products that
         people love.
       </Typography>

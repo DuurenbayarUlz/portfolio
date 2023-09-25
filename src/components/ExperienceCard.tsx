@@ -20,10 +20,10 @@ export const ExperienceCard = ({
     return (
       <Stack direction="row">
         <Box sx={{ minWidth: "110px" }}>
-          <Typography variant="body2">{date}</Typography>
+          <Typography variant="body1">{date}</Typography>
         </Box>
         <Stack sx={{ marginLeft: "20px" }}>
-          <Typography variant="body2">{role}</Typography>
+          <Typography variant="body1">{role}</Typography>
           <Typography variant="body2" sx={{ paddingTop: 4 }}>
             {description}
           </Typography>
@@ -56,8 +56,8 @@ export const ExperienceCard = ({
         paddingTop: "0px",
       }}
     >
-      <Box sx={{ minWidth: 120, paddingTop: "6px" }}>
-        <Typography variant="body2">{date}</Typography>
+      <Box sx={{ minWidth: 120 }}>
+        <Typography variant="body1">{date}</Typography>
       </Box>
       <Stack sx={{ marginLeft: "20px" }}>
         <Typography variant="body1">{role}</Typography>

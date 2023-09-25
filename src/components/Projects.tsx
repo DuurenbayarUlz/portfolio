@@ -33,7 +33,7 @@ export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
     return (
       <Stack sx={{ paddingTop: 8 }}>
         <Box sx={{ paddingY: "16px" }}>
-          <Typography variant="h6">PROJECTS</Typography>
+          <Typography variant="subtitle1">PROJECTS</Typography>
         </Box>
 
         {projectData.map((item, index) => (

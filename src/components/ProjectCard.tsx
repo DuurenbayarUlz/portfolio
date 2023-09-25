@@ -40,7 +40,7 @@ export const ProjectCard = ({
         </Box>
 
         <Stack sx={{ marginLeft: "20px" }}>
-          <Typography variant="body2">{title}</Typography>
+          <Typography variant="body1">{title}</Typography>
           <Typography variant="body2" sx={{ paddingTop: 4 }}>
             {description}
           </Typography>

@@ -33,46 +33,29 @@ const theme = createTheme({
   typography: {
     fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif",
     h1: {
-      fontSize: "54px",
+      fontSize: "36px",
       fontStyle: "normal",
       fontWeight: 700,
-      lineHeight: "65.93px",
     },
     h2: {
-      fontSize: "48px",
-      fontStyle: "normal",
-      fontWeight: 700,
-      lineHeight: "58.61px",
-    },
-    h3: {
-      fontSize: "40px",
-      fontStyle: "normal",
-      fontWeight: 700,
-      lineHeight: "48.84px",
-    },
-    h6: {
-      fontSize: "16px",
-      fontStyle: "normal",
-      fontWeight: 500,
-      lineHeight: "19.53px",
-    },
-    subtitle1: {
-      fontSize: "24px",
-      fontStyle: "normal",
-      fontWeight: 500,
-      lineHeight: "28.63px",
-    },
-    body1: {
       fontSize: "20px",
       fontStyle: "normal",
-      fontWeight: 300,
-      lineHeight: "29.02px",
+      fontWeight: 500,
     },
-    body2: {
-      fontSize: "16px",
+    subtitle1: {
+      fontSize: "14px",
+      fontStyle: "normal",
+      fontWeight: 500,
+    },
+    body1: {
+      fontSize: "18px",
       fontStyle: "normal",
       fontWeight: 300,
-      lineHeight: "19.53px",
+    },
+    body2: {
+      fontSize: "14px",
+      fontStyle: "normal",
+      fontWeight: 300,
     },
   },
 });

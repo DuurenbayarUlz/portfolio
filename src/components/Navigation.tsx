@@ -42,7 +42,7 @@ export const Navigation = () => {
           onClick={(e) => handleScroll(e, index)}
         >
           <Typography
-            variant="subtitle1"
+            variant="h2"
             sx={{
               paddingTop: "12px",
               color: selectedItem === index ? "black" : "grey",

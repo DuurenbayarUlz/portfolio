@@ -25,7 +25,7 @@ export const Experience = ({ isMobile }: { isMobile?: boolean }) => {
     return (
       <Stack sx={{ paddingTop: 8 }}>
         <Box sx={{ paddingY: "16px" }}>
-          <Typography variant="h6">EXPERIENCE</Typography>
+          <Typography variant="subtitle1">EXPERIENCE</Typography>
         </Box>
 
         {data.map((item, index) => (
