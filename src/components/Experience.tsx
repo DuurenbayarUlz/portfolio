@@ -8,16 +8,14 @@ const data = [
     date: "2018 - Present",
     role: "Lead Engineer",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-          tempor orci dapibus ultrices in iaculis nunc sed augue.`,
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     skills: ["TypeScript", "React", "Next.js", "Node.js"],
   },
   {
     date: "2016 - 2018",
     role: "Software Engineer",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-          tempor orci dapibus ultrices in iaculis nunc sed augue.`,
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     skills: ["TypeScript", "React", "Next.js", "Node.js"],
   },
 ];
@@ -31,7 +29,7 @@ export const Experience = ({ isMobile }: { isMobile?: boolean }) => {
         </Box>
 
         {data.map((item, index) => (
-          <Box key={index} sx={{ margin: "8px" }}>
+          <Box key={index} sx={{ marginY: "8px" }}>
             <ExperienceCard {...item} isMobile />
           </Box>
         ))}
@@ -61,7 +59,7 @@ export const Experience = ({ isMobile }: { isMobile?: boolean }) => {
     <section id="experience">
       <Stack sx={{ paddingTop: 24 }}>
         {data.map((item, index) => (
-          <Box key={index} sx={{ margin: "16px" }}>
+          <Box key={index} sx={{ marginY: "16px" }}>
             <ExperienceCard {...item} />
           </Box>
         ))}

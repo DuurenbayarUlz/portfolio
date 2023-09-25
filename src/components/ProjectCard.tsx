@@ -14,13 +14,12 @@ export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
     return (
       <Stack direction="row">
         <Box
-          width="40%"
           position="relative"
           height={70}
           sx={{
             borderRadius: "10px",
             border: "1px solid #D3D3D3",
-            maxWidth: 120,
+            minWidth: 100,
             overflow: "hidden",
           }}
         >
@@ -33,7 +32,7 @@ export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
           />
         </Box>
 
-        <Stack width="60%" sx={{ marginLeft: "20px" }}>
+        <Stack sx={{ marginLeft: "20px" }}>
           <Typography variant="body2">{title}</Typography>
           <Typography variant="body2" sx={{ paddingTop: 4 }}>
             {description}
@@ -68,13 +67,12 @@ export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
       }}
     >
       <Box
-        width="40%"
         position="relative"
         height={80}
         sx={{
           borderRadius: "10px",
           border: "1px solid #D3D3D3",
-          maxWidth: 120,
+          minWidth: 120,
           overflow: "hidden",
         }}
       >
@@ -87,7 +85,7 @@ export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
         />
       </Box>
 
-      <Stack width="60%" sx={{ marginLeft: "20px" }}>
+      <Stack sx={{ marginLeft: "20px" }}>
         <Typography variant="body1">{title}</Typography>
         <Typography variant="body2" sx={{ paddingTop: 4 }}>
           {description}
@@ -104,6 +102,7 @@ export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
               key={index}
               label={skill}
               sx={{ marginRight: 2, marginBottom: 2 }}
+              size="small"
             />
           ))}
         </Box>

@@ -5,21 +5,21 @@ const projectData = [
   {
     title: "Mongol API",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
     href: "",
   },
   {
     title: "Mongol API",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
     href: "",
   },
   {
     title: "Mongol API",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci dapibus ultrices in iaculis nunc sed augue.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
     href: "",
   },
@@ -34,7 +34,7 @@ export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
         </Box>
 
         {projectData.map((item, index) => (
-          <Box key={index} sx={{ margin: "8px" }}>
+          <Box key={index} sx={{ marginY: "8px" }}>
             <ProjectCard {...item} isMobile />
           </Box>
         ))}
@@ -50,7 +50,7 @@ export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
     <section id="projects">
       <Stack sx={{ paddingY: 24 }}>
         {projectData.map((item, index) => (
-          <Box key={index} sx={{ margin: "16px" }}>
+          <Box key={index} sx={{ marginY: "16px" }}>
             <ProjectCard {...item} />
           </Box>
         ))}

@@ -19,10 +19,10 @@ export const ExperienceCard = ({
   if (isMobile) {
     return (
       <Stack direction="row">
-        <Box width="40%" sx={{ maxWidth: "120px" }}>
+        <Box sx={{ minWidth: "110px" }}>
           <Typography variant="body2">{date}</Typography>
         </Box>
-        <Stack width="60%" sx={{ marginLeft: "20px" }}>
+        <Stack sx={{ marginLeft: "20px" }}>
           <Typography variant="body2">{role}</Typography>
           <Typography variant="body2" sx={{ paddingTop: 4 }}>
             {description}
@@ -56,10 +56,10 @@ export const ExperienceCard = ({
         paddingTop: "0px",
       }}
     >
-      <Box width="40%" sx={{ maxWidth: 120, paddingTop: "6px" }}>
+      <Box sx={{ minWidth: 120, paddingTop: "6px" }}>
         <Typography variant="body2">{date}</Typography>
       </Box>
-      <Stack width="60%">
+      <Stack sx={{ marginLeft: "20px" }}>
         <Typography variant="body1">{role}</Typography>
         <Typography variant="body2" sx={{ paddingTop: 4 }}>
           {description}
@@ -76,6 +76,7 @@ export const ExperienceCard = ({
               key={index}
               label={skill}
               sx={{ marginRight: 2, marginBottom: 2 }}
+              size="small"
             />
           ))}
         </Box>
