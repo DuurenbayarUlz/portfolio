@@ -8,6 +8,7 @@ const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
     href: "",
+    imgPath: "/projects/mongol-api.png",
   },
   {
     title: "Mongol API",
@@ -15,6 +16,7 @@ const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
     href: "",
+    imgPath: "/projects/api.png",
   },
   {
     title: "Mongol API",
@@ -22,6 +24,7 @@ const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
     href: "",
+    imgPath: "/projects/api.png",
   },
 ];
 

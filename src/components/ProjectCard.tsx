@@ -7,9 +7,16 @@ interface Props {
   tech: string[];
   href: string;
   isMobile?: boolean;
+  imgPath: string;
 }
 
-export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
+export const ProjectCard = ({
+  title,
+  description,
+  tech,
+  isMobile,
+  imgPath,
+}: Props) => {
   if (isMobile) {
     return (
       <Stack direction="row">
@@ -25,7 +32,7 @@ export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
         >
           <Image
             fill
-            src={"/projects/mongol-api.png"}
+            src={imgPath}
             alt="mongol-api"
             style={{ objectFit: "cover" }}
             sizes="100%"
@@ -78,7 +85,7 @@ export const ProjectCard = ({ title, description, tech, isMobile }: Props) => {
       >
         <Image
           fill
-          src={"/projects/mongol-api.png"}
+          src={imgPath}
           alt="mongol-api"
           style={{ objectFit: "cover" }}
           sizes="100%"
