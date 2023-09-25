@@ -1,5 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
-import { ProjectCard } from "./ProjectCard";
+import {
+  ProjectCardDesktop,
+  ProjectCardMobile,
+} from "../components/project-card";
 
 const projectData = [
   {
@@ -38,7 +41,7 @@ export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
 
         {projectData.map((item, index) => (
           <Box key={index} sx={{ marginY: "8px" }}>
-            <ProjectCard {...item} isMobile />
+            <ProjectCardMobile {...item} />
           </Box>
         ))}
 
@@ -54,7 +57,7 @@ export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
       <Stack sx={{ paddingY: 24 }}>
         {projectData.map((item, index) => (
           <Box key={index} sx={{ marginY: "16px" }}>
-            <ProjectCard {...item} />
+            <ProjectCardDesktop {...item} />
           </Box>
         ))}
 

@@ -1,11 +1,11 @@
 "use client";
 
-import { About } from "@/components/About";
-import { Experience } from "@/components/Experience";
-import { Intro } from "@/components/Intro";
-import { Projects } from "@/components/Projects";
+import { About } from "@/features/About";
+import { Experience } from "@/features/Experience";
+import { Intro } from "@/features/Intro";
+import { Projects } from "@/features/Projects";
 import { Section } from "@/components/Section";
-import { Social } from "@/components/Social";
+import { Social } from "@/features/Social";
 import { useDelay } from "@/hooks/use-delay";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { Box, Container, Grid, Stack } from "@mui/material";

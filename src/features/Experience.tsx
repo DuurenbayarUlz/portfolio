@@ -1,7 +1,10 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Box, Stack, Typography } from "@mui/material";
 import Link from "next/link";
-import { ExperienceCard } from "./ExperienceCard";
+import {
+  ExperienceCardDesktop,
+  ExperienceCardMobile,
+} from "../components/experience-card";
 
 const data = [
   {
@@ -30,7 +33,7 @@ export const Experience = ({ isMobile }: { isMobile?: boolean }) => {
 
         {data.map((item, index) => (
           <Box key={index} sx={{ marginY: "8px" }}>
-            <ExperienceCard {...item} isMobile />
+            <ExperienceCardMobile {...item} />
           </Box>
         ))}
 
@@ -47,7 +50,7 @@ export const Experience = ({ isMobile }: { isMobile?: boolean }) => {
               },
             }}
           >
-            <Typography variant="body2">Resume</Typography>
+            <Typography variant="body1">Resume</Typography>
             <ArrowForwardIcon />
           </Box>
         </Link>
@@ -60,7 +63,7 @@ export const Experience = ({ isMobile }: { isMobile?: boolean }) => {
       <Stack sx={{ paddingTop: 24 }}>
         {data.map((item, index) => (
           <Box key={index} sx={{ marginY: "16px" }}>
-            <ExperienceCard {...item} />
+            <ExperienceCardDesktop {...item} />
           </Box>
         ))}
 
