@@ -35,7 +35,14 @@ export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
   if (isMobile) {
     return (
       <Stack sx={{ paddingTop: 8 }}>
-        <Box sx={{ paddingY: "16px" }}>
+        <Box
+          sx={{
+            paddingY: "16px",
+            position: "sticky",
+            top: "0px",
+            backgroundColor: "white",
+          }}
+        >
           <Typography variant="subtitle1">PROJECTS</Typography>
         </Box>
 

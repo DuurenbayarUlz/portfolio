@@ -5,7 +5,14 @@ export const About = ({ isMobile }: { isMobile?: boolean }) => {
   if (isMobile) {
     return (
       <Stack sx={{ paddingTop: 8 }}>
-        <Box sx={{ paddingY: "16px" }}>
+        <Box
+          sx={{
+            paddingY: "16px",
+            backgroundColor: "white",
+            position: "sticky",
+            top: "0px",
+          }}
+        >
           <Typography variant="subtitle1">ABOUT</Typography>
         </Box>
 
