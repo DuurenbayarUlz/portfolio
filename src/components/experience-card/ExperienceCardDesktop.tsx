@@ -17,7 +17,7 @@ export const ExperienceCardDesktop = ({
   href,
 }: Props) => {
   return (
-    <CustomStack href={href}>
+    <CustomStack>
       <Box sx={{ minWidth: 120 }}>
         <Typography variant="body1">{date}</Typography>
       </Box>

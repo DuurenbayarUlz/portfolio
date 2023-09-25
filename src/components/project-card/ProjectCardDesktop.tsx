@@ -18,7 +18,7 @@ export const ProjectCardDesktop = ({
   href,
 }: Props) => {
   return (
-    <CustomStack href={href}>
+    <CustomStack>
       <Box
         position="relative"
         height={80}

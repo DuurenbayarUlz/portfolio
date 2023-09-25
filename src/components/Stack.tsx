@@ -1,15 +1,9 @@
 import { styled } from "@mui/material";
 import MuiStack from "@mui/material/Stack";
-import Link from "next/link";
 
 interface MuiStackProps {
   children: React.ReactNode;
   direction?: "row" | "column";
-}
-
-interface StyledStackProps {
-  children: React.ReactNode;
-  href: URL | string;
 }
 
 const StyledStack = styled(MuiStack)<MuiStackProps>(({ theme }) => {
@@ -25,10 +19,6 @@ const StyledStack = styled(MuiStack)<MuiStackProps>(({ theme }) => {
   };
 });
 
-export const CustomStack = ({ children, href }: StyledStackProps) => {
-  return (
-    <Link href={href} target="_blank" rel="noopener">
-      <StyledStack direction="row">{children}</StyledStack>
-    </Link>
-  );
+export const CustomStack = ({ children }: MuiStackProps) => {
+  return <StyledStack direction="row">{children}</StyledStack>;
 };
