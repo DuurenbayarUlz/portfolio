@@ -13,6 +13,7 @@ const data = [
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     skills: ["TypeScript", "React", "Next.js", "Node.js"],
+    href: "/",
   },
   {
     date: "2016 - 2018",
@@ -20,6 +21,7 @@ const data = [
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     skills: ["TypeScript", "React", "Next.js", "Node.js"],
+    href: "/",
   },
 ];
 

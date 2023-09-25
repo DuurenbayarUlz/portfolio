@@ -1,24 +1,24 @@
 import { Box, Chip, Stack, Typography } from "@mui/material";
 import Image from "next/image";
+import { CustomStack } from "../Stack";
 
 interface Props {
   title: string;
   description: string;
   tech: string[];
   href: string;
-
   imgPath: string;
 }
 
-export const ProjectCardDesktop = ({ title, description, tech, imgPath }: Props) => {
+export const ProjectCardDesktop = ({
+  title,
+  description,
+  tech,
+  imgPath,
+  href,
+}: Props) => {
   return (
-    <Stack
-      direction="row"
-      sx={{
-        borderRadius: "8px",
-        paddingTop: "0px",
-      }}
-    >
+    <CustomStack href={href}>
       <Box
         position="relative"
         height={80}
@@ -60,6 +60,6 @@ export const ProjectCardDesktop = ({ title, description, tech, imgPath }: Props)
           ))}
         </Box>
       </Stack>
-    </Stack>
+    </CustomStack>
   );
 };

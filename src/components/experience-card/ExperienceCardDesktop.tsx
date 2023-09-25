@@ -1,21 +1,23 @@
 import { Box, Chip, Stack, Typography } from "@mui/material";
+import { CustomStack } from "../Stack";
 
 interface Props {
   date: string;
   role: string;
   description: string;
   skills: string[];
+  href: string;
 }
 
-export const ExperienceCardDesktop = ({ date, role, description, skills }: Props) => {
+export const ExperienceCardDesktop = ({
+  date,
+  role,
+  description,
+  skills,
+  href,
+}: Props) => {
   return (
-    <Stack
-      direction="row"
-      sx={{
-        borderRadius: "8px",
-        paddingTop: "0px",
-      }}
-    >
+    <CustomStack href={href}>
       <Box sx={{ minWidth: 120 }}>
         <Typography variant="body1">{date}</Typography>
       </Box>
@@ -41,6 +43,6 @@ export const ExperienceCardDesktop = ({ date, role, description, skills }: Props
           ))}
         </Box>
       </Stack>
-    </Stack>
+    </CustomStack>
   );
 };

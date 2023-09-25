@@ -10,7 +10,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
-    href: "",
+    href: "/",
     imgPath: "/projects/mongol-api.png",
   },
   {
@@ -18,7 +18,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
-    href: "",
+    href: "/",
     imgPath: "/projects/api.png",
   },
   {
@@ -26,7 +26,7 @@ const projectData = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tech: ["TypeScript", "React", "Next.js", "Node.js"],
-    href: "",
+    href: "/",
     imgPath: "/projects/api.png",
   },
 ];

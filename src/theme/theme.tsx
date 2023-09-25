@@ -1,24 +1,6 @@
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { FC, PropsWithChildren } from "react";
 
-declare module "@mui/material/styles" {
-  interface PaletteColor {
-    100?: string;
-    200?: string;
-    300?: string;
-    400?: string;
-    500?: string;
-  }
-
-  interface SimplePaletteColorOptions {
-    100?: string;
-    200?: string;
-    300?: string;
-    400?: string;
-    500?: string;
-  }
-}
-
 const theme = createTheme({
   spacing: 4,
   breakpoints: {
