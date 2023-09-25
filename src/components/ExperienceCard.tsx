@@ -56,10 +56,10 @@ export const ExperienceCard = ({
         paddingTop: "0px",
       }}
     >
-      <Box width="30%">
+      <Box width="40%" sx={{ maxWidth: 120, paddingTop: "6px" }}>
         <Typography variant="body2">{date}</Typography>
       </Box>
-      <Stack width="70%">
+      <Stack width="60%">
         <Typography variant="body1">{role}</Typography>
         <Typography variant="body2" sx={{ paddingTop: 4 }}>
           {description}
