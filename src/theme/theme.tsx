@@ -50,10 +50,16 @@ const theme = createTheme({
       fontWeight: 700,
       lineHeight: "48.84px",
     },
+    h6: {
+      fontSize: "16px",
+      fontStyle: "normal",
+      fontWeight: 500,
+      lineHeight: "19.53px",
+    },
     subtitle1: {
       fontSize: "24px",
       fontStyle: "normal",
-      fontWeight: 400,
+      fontWeight: 500,
       lineHeight: "28.63px",
     },
     body1: {

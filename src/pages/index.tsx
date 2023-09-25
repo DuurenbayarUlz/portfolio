@@ -8,7 +8,7 @@ import { Section } from "@/components/Section";
 import { Social } from "@/components/Social";
 import { useDelay } from "@/hooks/use-delay";
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { Box, Grid, Stack } from "@mui/material";
+import { Box, Container, Grid, Stack } from "@mui/material";
 
 const Home = () => {
   const isMobile = useMediaQuery();
@@ -20,15 +20,15 @@ const Home = () => {
 
   if (isMobile) {
     return (
-      <Section>
+      <Container disableGutters sx={{ maxWidth: "500px" }}>
         <Stack sx={{ paddingX: "12px" }}>
           <Intro isMobile />
+          <Social isMobile />
           <About isMobile />
           <Experience isMobile />
           <Projects isMobile />
-          <Social isMobile />
         </Stack>
-      </Section>
+      </Container>
     );
   }
 

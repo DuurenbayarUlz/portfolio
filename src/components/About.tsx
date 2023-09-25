@@ -1,10 +1,14 @@
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 
 export const About = ({ isMobile }: { isMobile?: boolean }) => {
   if (isMobile) {
     return (
       <Stack sx={{ paddingTop: 8 }}>
+        <Box sx={{ paddingY: "16px" }}>
+          <Typography variant="h6">ABOUT</Typography>
+        </Box>
+
         <Typography variant="body2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio

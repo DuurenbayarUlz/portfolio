@@ -29,13 +29,17 @@ export const Projects = ({ isMobile }: { isMobile?: boolean }) => {
   if (isMobile) {
     return (
       <Stack sx={{ paddingTop: 8 }}>
+        <Box sx={{ paddingY: "16px" }}>
+          <Typography variant="h6">PROJECTS</Typography>
+        </Box>
+
         {projectData.map((item, index) => (
           <Box key={index} sx={{ margin: "8px" }}>
             <ProjectCard {...item} isMobile />
           </Box>
         ))}
 
-        <Typography variant="body2" sx={{ color: "grey", paddingTop: "32px" }}>
+        <Typography variant="body2" sx={{ color: "grey", paddingY: "32px" }}>
           Powered by NextJS and Material UI, deployed on Vercel
         </Typography>
       </Stack>

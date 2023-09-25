@@ -8,9 +8,9 @@ export const Social = ({ isMobile }: { isMobile?: boolean }) => {
     <Stack
       direction="row"
       sx={{ marginY: isMobile ? "16px" : "32px" }}
-      justifyContent="space-around"
+      justifyContent="space-between"
       alignItems="center"
-      maxWidth={140}
+      maxWidth={isMobile ? 112 : 140}
     >
       <Link href="https://www.instagram.com/drnbyr_/" target="_blank">
         <Instagram sx={{ fontSize: 30, color: "grey" }} />

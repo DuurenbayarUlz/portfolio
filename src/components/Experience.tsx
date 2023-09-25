@@ -26,6 +26,10 @@ export const Experience = ({ isMobile }: { isMobile?: boolean }) => {
   if (isMobile) {
     return (
       <Stack sx={{ paddingTop: 8 }}>
+        <Box sx={{ paddingY: "16px" }}>
+          <Typography variant="h6">EXPERIENCE</Typography>
+        </Box>
+
         {data.map((item, index) => (
           <Box key={index} sx={{ margin: "8px" }}>
             <ExperienceCard {...item} isMobile />

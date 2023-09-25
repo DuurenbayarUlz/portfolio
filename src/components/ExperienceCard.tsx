@@ -18,7 +18,7 @@ export const ExperienceCard = ({
 }: Props) => {
   if (isMobile) {
     return (
-      <Stack direction="row" justifyContent="center">
+      <Stack direction="row">
         <Box width="40%" sx={{ maxWidth: "120px" }}>
           <Typography variant="body2">{date}</Typography>
         </Box>
