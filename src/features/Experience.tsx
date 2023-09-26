@@ -8,19 +8,33 @@ import {
 
 const data = [
   {
-    date: "2018 - Present",
-    role: "Lead Engineer",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    skills: ["TypeScript", "React", "Next.js", "Node.js"],
+    date: "2022 - Present",
+    role: "Software Engineer ~ Pinecone",
+    description: "Working on the student report delivery system",
+    skills: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "GraphQL",
+      "AWS",
+      "CI/CD",
+    ],
     href: "/",
   },
   {
-    date: "2016 - 2018",
-    role: "Software Engineer",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    skills: ["TypeScript", "React", "Next.js", "Node.js"],
+    date: "2021 - 2022",
+    role: "Software Engineer ~ RenderedAI",
+    description: `Worked on the development team, building the next syntheitc data generation platform`,
+    skills: [
+      "TypeScript",
+      "React",
+      "Gatsby.js",
+      "Node.js",
+      "AWS",
+      "Jest",
+      "Cypress",
+    ],
     href: "/",
   },
 ];
@@ -84,7 +98,7 @@ export const Experience = ({ isMobile }: { isMobile?: boolean }) => {
               "&:hover": {
                 textDecoration: "underline",
                 display: "flex",
-                width: "100px",
+                width: "90px",
                 justifyContent: "space-between",
               },
             }}
