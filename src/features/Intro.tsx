@@ -13,8 +13,8 @@ export const Intro = ({ isMobile }: { isMobile?: boolean }) => {
           Software Engineer at Pinecone
         </Typography>
         <Typography variant="body2" sx={{ paddingTop: "8px", color: "grey" }}>
-          I am a software engineer with a passion for building products that
-          people love.
+          I am software engineer with a keen interest in creating products that
+          serves a purpose.
         </Typography>
       </Stack>
     );
@@ -32,8 +32,8 @@ export const Intro = ({ isMobile }: { isMobile?: boolean }) => {
         variant="body1"
         sx={{ paddingTop: "12px", maxWidth: "400px", color: "grey" }}
       >
-        I am a software engineer with a passion for building products that
-        people love.
+        I am software engineer with a keen interest in creating products that
+        serves a purpose.
       </Typography>
 
       <Navigation />

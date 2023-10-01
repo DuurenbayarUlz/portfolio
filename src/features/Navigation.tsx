@@ -46,11 +46,12 @@ export const Navigation = () => {
             sx={{
               paddingTop: "12px",
               color: selectedItem === index ? "black" : "grey",
-              paddingLeft: selectedItem === index ? "12px" : "0px",
+              paddingLeft: selectedItem === index ? "20px" : "0px",
               "&:hover": {
-                paddingLeft: "12px",
+                paddingLeft: "20px",
                 color: "black",
               },
+              transition: "all 0.2s ease",
             }}
           >
             {item.topic}

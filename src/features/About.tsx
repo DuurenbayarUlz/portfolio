@@ -16,19 +16,19 @@ export const About = ({ isMobile }: { isMobile?: boolean }) => {
           <Typography variant="subtitle1">ABOUT</Typography>
         </Box>
 
-        <Typography variant="body1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-          tempor orci dapibus ultrices in iaculis nunc sed augue.
+        <Typography variant="body1">Hey there 👋,</Typography>
+        <Typography variant="body1" sx={{ paddingTop: 4 }}>
+          I&apos;m a recent graduate from Kalamazoo College with a double major
+          in Computer Science and Economics.
         </Typography>
         <Typography variant="body1" sx={{ paddingTop: 4 }}>
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci
-          dapibus ultrices in iaculis nunc sed augue.
+          Over the past 3 years, I&apos;ve had the opportunity to create
+          software products for AI startup company and educational institution.
         </Typography>
         <Typography variant="body1" sx={{ paddingTop: 4 }}>
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-          tempor orci dapibus ultrices in iaculis nunc sed augue.
+          When I am not coding, you will find me playing basketball, rock
+          climbing, and running. In addition to sports, I enjoy spending quality
+          time with my friends and creating memories.
         </Typography>
       </Stack>
     );
@@ -37,19 +37,19 @@ export const About = ({ isMobile }: { isMobile?: boolean }) => {
   return (
     <section id="about">
       <Stack sx={{ paddingTop: 24 }}>
-        <Typography variant="body1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-          tempor orci dapibus ultrices in iaculis nunc sed augue.
+        <Typography variant="body1">Hey there 👋,</Typography>
+        <Typography variant="body1" sx={{ paddingTop: 4 }}>
+          I&apos;m a recent graduate from Kalamazoo College with a double major
+          in Computer Science and Economics.
         </Typography>
         <Typography variant="body1" sx={{ paddingTop: 4 }}>
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Odio tempor orci
-          dapibus ultrices in iaculis nunc sed augue.
+          Over the past 3 years, I&apos;ve had the opportunity to create
+          software products for AI startup company and educational institution.
         </Typography>
         <Typography variant="body1" sx={{ paddingTop: 4 }}>
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio
-          tempor orci dapibus ultrices in iaculis nunc sed augue.
+          When I am not coding, you will find me playing basketball, rock
+          climbing, and running. In addition to sports, I enjoy spending quality
+          time with my friends and creating memories.
         </Typography>
       </Stack>
     </section>
