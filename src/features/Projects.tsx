@@ -8,26 +8,27 @@ const projectData = [
   {
     title: "Mongol API",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tech: ["TypeScript", "React", "Next.js", "Node.js"],
-    href: "/",
-    imgPath: "/projects/mongol-api.png",
-  },
-  {
-    title: "Mongol API",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tech: ["TypeScript", "React", "Next.js", "Node.js"],
-    href: "/",
+      "Open source API service that is dedicated to providing accurate information about Mongolia.",
+    tech: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Vercel",
+      "GraphQL",
+      "Rest",
+      "NX",
+    ],
+    href: "https://mongol-api.vercel.app/",
     imgPath: "/projects/api.png",
   },
   {
-    title: "Mongol API",
+    title: "Movie App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tech: ["TypeScript", "React", "Next.js", "Node.js"],
-    href: "/",
-    imgPath: "/projects/api.png",
+      "A movie app that displays up to date information about movies and TV shows.",
+    tech: ["TypeScript", "React", "Next.js", "TailwindCSS", "MovieDB API"],
+    href: "https://movie-site-phi-eight.vercel.app/",
+    imgPath: "/projects/movie.png",
   },
 ];
 
