@@ -9,7 +9,7 @@ import {
 const data = [
   {
     date: "2022 - Present",
-    role: "Software Engineer ~ Pinecone",
+    role: "Software Engineer - Pinecone",
     description: "Working on the student report delivery system",
     skills: [
       "TypeScript",
@@ -24,7 +24,7 @@ const data = [
   },
   {
     date: "2021 - 2022",
-    role: "Software Engineer ~ RenderedAI",
+    role: "Software Engineer - RenderedAI",
     description: `Worked on the development team, building the next syntheitc data generation platform`,
     skills: [
       "TypeScript",

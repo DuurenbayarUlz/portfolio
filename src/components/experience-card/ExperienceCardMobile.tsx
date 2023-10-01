@@ -17,10 +17,10 @@ export const ExperienceCardMobile = ({
   return (
     <Stack direction="row">
       <Box sx={{ minWidth: "110px" }}>
-        <Typography variant="h3">{date}</Typography>
+        <Typography variant="body1">{date}</Typography>
       </Box>
       <Stack sx={{ marginLeft: "20px" }}>
-        <Typography variant="h3">{role}</Typography>
+        <Typography variant="body1">{role}</Typography>
         <Typography variant="body2" sx={{ paddingTop: 4 }}>
           {description}
         </Typography>
